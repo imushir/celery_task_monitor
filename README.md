@@ -64,3 +64,8 @@ py app.py (For Windows)
 After successful running the above command you will get the link,
 copy paste the  http://127.0.0.1:5000/ in browser.
 --------------------------------------------------------------------------------
+
+To run the celery task manager, run the following command from outside the
+project folder
+
+celery -A celery_task_monitor.tasks worker --loglevel=INFO
